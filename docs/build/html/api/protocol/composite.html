@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb.protocol.composite &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../../index.html" />
+    <link rel="up" title="ooxcb.protocol" href="index.html" />
+    <link rel="next" title="ooxcb.protocol.damage" href="damage.html" />
+    <link rel="prev" title="ooxcb.protocol.bigreq" href="bigreq.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="damage.html" title="ooxcb.protocol.damage"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bigreq.html" title="ooxcb.protocol.bigreq"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-ooxcb.protocol.composite">
+<h1>ooxcb.protocol.composite<a class="headerlink" href="#module-ooxcb.protocol.composite" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ooxcb.protocol.composite.Redirect">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">Redirect</tt><a class="headerlink" href="#ooxcb.protocol.composite.Redirect" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.composite.Redirect.Automatic">
+<tt class="descname">Automatic</tt><a class="headerlink" href="#ooxcb.protocol.composite.Redirect.Automatic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.composite.Redirect.Manual">
+<tt class="descname">Manual</tt><a class="headerlink" href="#ooxcb.protocol.composite.Redirect.Manual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.GetOverlayWindowReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">GetOverlayWindowReply</tt><a class="headerlink" href="#ooxcb.protocol.composite.GetOverlayWindowReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.composite.GetOverlayWindowReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.GetOverlayWindowReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.composite.GetOverlayWindowReply.overlay_win">
+<tt class="descname">overlay_win</tt><a class="headerlink" href="#ooxcb.protocol.composite.GetOverlayWindowReply.overlay_win" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.WindowMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">WindowMixin</tt><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.composite.WindowMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.redirect_checked">
+<tt class="descname">redirect_checked</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.redirect_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.redirect">
+<tt class="descname">redirect</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.redirect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.redirect_subwindows_checked">
+<tt class="descname">redirect_subwindows_checked</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.redirect_subwindows_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.redirect_subwindows">
+<tt class="descname">redirect_subwindows</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.redirect_subwindows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.unredirect_checked">
+<tt class="descname">unredirect_checked</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.unredirect_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.unredirect">
+<tt class="descname">unredirect</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.unredirect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.unredirect_subwindows_checked">
+<tt class="descname">unredirect_subwindows_checked</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.unredirect_subwindows_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.unredirect_subwindows">
+<tt class="descname">unredirect_subwindows</tt><big>(</big><em>self</em>, <em>update=Redirect.Automatic</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.unredirect_subwindows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.name_pixmap_checked">
+<tt class="descname">name_pixmap_checked</tt><big>(</big><em>self</em>, <em>pixmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.name_pixmap_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.name_pixmap">
+<tt class="descname">name_pixmap</tt><big>(</big><em>self</em>, <em>pixmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.name_pixmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.get_overlay_window">
+<tt class="descname">get_overlay_window</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.get_overlay_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.get_overlay_window_unchecked">
+<tt class="descname">get_overlay_window_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.get_overlay_window_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.release_overlay_window_checked">
+<tt class="descname">release_overlay_window_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.release_overlay_window_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.WindowMixin.release_overlay_window">
+<tt class="descname">release_overlay_window</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.WindowMixin.release_overlay_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.QueryVersionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">QueryVersionReply</tt><a class="headerlink" href="#ooxcb.protocol.composite.QueryVersionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.composite.QueryVersionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.QueryVersionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.composite.QueryVersionReply.major_version">
+<tt class="descname">major_version</tt><a class="headerlink" href="#ooxcb.protocol.composite.QueryVersionReply.major_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.composite.QueryVersionReply.minor_version">
+<tt class="descname">minor_version</tt><a class="headerlink" href="#ooxcb.protocol.composite.QueryVersionReply.minor_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.QueryVersionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">QueryVersionCookie</tt><a class="headerlink" href="#ooxcb.protocol.composite.QueryVersionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.GetOverlayWindowCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">GetOverlayWindowCookie</tt><a class="headerlink" href="#ooxcb.protocol.composite.GetOverlayWindowCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.RegionMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">RegionMixin</tt><a class="headerlink" href="#ooxcb.protocol.composite.RegionMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.composite.RegionMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.composite.RegionMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.composite.RegionMixin.create_from_border_clip">
+<em class="property">classmethod </em><tt class="descname">create_from_border_clip</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>window</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.RegionMixin.create_from_border_clip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.composite.compositeExtension">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.composite.</tt><tt class="descname">compositeExtension</tt><a class="headerlink" href="#ooxcb.protocol.composite.compositeExtension" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.composite.compositeExtension.header">
+<tt class="descname">header</tt><a class="headerlink" href="#ooxcb.protocol.composite.compositeExtension.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.compositeExtension.query_version">
+<tt class="descname">query_version</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.compositeExtension.query_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.compositeExtension.query_version_unchecked">
+<tt class="descname">query_version_unchecked</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.compositeExtension.query_version_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.compositeExtension.create_region_from_border_clip_checked">
+<tt class="descname">create_region_from_border_clip_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>window</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.compositeExtension.create_region_from_border_clip_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.composite.compositeExtension.create_region_from_border_clip">
+<tt class="descname">create_region_from_border_clip</tt><big>(</big><em>self</em>, <em>region</em>, <em>window</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.composite.compositeExtension.create_region_from_border_clip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="bigreq.html"
+                                  title="previous chapter">ooxcb.protocol.bigreq</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="damage.html"
+                                  title="next chapter">ooxcb.protocol.damage</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/api/protocol/composite.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="damage.html" title="ooxcb.protocol.damage"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bigreq.html" title="ooxcb.protocol.bigreq"
+             >previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" >ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>

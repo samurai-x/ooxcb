@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb.protocol.shape &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../../index.html" />
+    <link rel="up" title="ooxcb.protocol" href="index.html" />
+    <link rel="next" title="ooxcb.protocol.xfixes" href="xfixes.html" />
+    <link rel="prev" title="ooxcb.protocol.screensaver" href="screensaver.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="xfixes.html" title="ooxcb.protocol.xfixes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="screensaver.html" title="ooxcb.protocol.screensaver"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-ooxcb.protocol.shape">
+<h1>ooxcb.protocol.shape<a class="headerlink" href="#module-ooxcb.protocol.shape" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ooxcb.protocol.shape.shapeExtension">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">shapeExtension</tt><a class="headerlink" href="#ooxcb.protocol.shape.shapeExtension" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.shape.shapeExtension.header">
+<tt class="descname">header</tt><a class="headerlink" href="#ooxcb.protocol.shape.shapeExtension.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.shapeExtension.query_version">
+<tt class="descname">query_version</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.shapeExtension.query_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.shapeExtension.query_version_unchecked">
+<tt class="descname">query_version_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.shapeExtension.query_version_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.WindowMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">WindowMixin</tt><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.shape.WindowMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_rectangles_checked">
+<tt class="descname">shape_rectangles_checked</tt><big>(</big><em>self</em>, <em>operation</em>, <em>destination_kind</em>, <em>ordering</em>, <em>x_offset</em>, <em>y_offset</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_rectangles_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_rectangles">
+<tt class="descname">shape_rectangles</tt><big>(</big><em>self</em>, <em>operation</em>, <em>destination_kind</em>, <em>ordering</em>, <em>x_offset</em>, <em>y_offset</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_rectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_mask_checked">
+<tt class="descname">shape_mask_checked</tt><big>(</big><em>self</em>, <em>operation</em>, <em>destination_kind</em>, <em>x_offset</em>, <em>y_offset</em>, <em>source_bitmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_mask_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_mask">
+<tt class="descname">shape_mask</tt><big>(</big><em>self</em>, <em>operation</em>, <em>destination_kind</em>, <em>x_offset</em>, <em>y_offset</em>, <em>source_bitmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_combine_checked">
+<tt class="descname">shape_combine_checked</tt><big>(</big><em>self</em>, <em>operation</em>, <em>destination_kind</em>, <em>source_kind</em>, <em>x_offset</em>, <em>y_offset</em>, <em>source_window</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_combine_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_combine">
+<tt class="descname">shape_combine</tt><big>(</big><em>self</em>, <em>operation</em>, <em>destination_kind</em>, <em>source_kind</em>, <em>x_offset</em>, <em>y_offset</em>, <em>source_window</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_combine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_offset_checked">
+<tt class="descname">shape_offset_checked</tt><big>(</big><em>self</em>, <em>destination_kind</em>, <em>x_offset</em>, <em>y_offset</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_offset_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_offset">
+<tt class="descname">shape_offset</tt><big>(</big><em>self</em>, <em>destination_kind</em>, <em>x_offset</em>, <em>y_offset</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_query_extents">
+<tt class="descname">shape_query_extents</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_query_extents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_query_extents_unchecked">
+<tt class="descname">shape_query_extents_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_query_extents_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_select_input_checked">
+<tt class="descname">shape_select_input_checked</tt><big>(</big><em>self</em>, <em>enable</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_select_input_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_select_input">
+<tt class="descname">shape_select_input</tt><big>(</big><em>self</em>, <em>enable</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_select_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_input_selected">
+<tt class="descname">shape_input_selected</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_input_selected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_input_selected_unchecked">
+<tt class="descname">shape_input_selected_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_input_selected_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_get_rectangles">
+<tt class="descname">shape_get_rectangles</tt><big>(</big><em>self</em>, <em>source_kind</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_get_rectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.WindowMixin.shape_get_rectangles_unchecked">
+<tt class="descname">shape_get_rectangles_unchecked</tt><big>(</big><em>self</em>, <em>source_kind</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.WindowMixin.shape_get_rectangles_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.QueryVersionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">QueryVersionReply</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryVersionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.shape.QueryVersionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.QueryVersionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryVersionReply.major_version">
+<tt class="descname">major_version</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryVersionReply.major_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryVersionReply.minor_version">
+<tt class="descname">minor_version</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryVersionReply.minor_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.QueryVersionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">QueryVersionCookie</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryVersionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.NotifyEvent">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">NotifyEvent</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.shape.NotifyEvent.event_name">
+<tt class="descname">event_name</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.event_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.NotifyEvent.opcode">
+<tt class="descname">opcode</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.opcode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.NotifyEvent.event_target_class">
+<tt class="descname">event_target_class</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.event_target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.shape.NotifyEvent.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.server_time">
+<tt class="descname">server_time</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.server_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.shaped">
+<tt class="descname">shaped</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.shaped" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.extents_y">
+<tt class="descname">extents_y</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.extents_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.extents_x">
+<tt class="descname">extents_x</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.extents_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.affected_window">
+<tt class="descname">affected_window</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.affected_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.extents_height">
+<tt class="descname">extents_height</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.extents_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.extents_width">
+<tt class="descname">extents_width</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.extents_width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.shape_kind">
+<tt class="descname">shape_kind</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.shape_kind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.NotifyEvent.response_type">
+<tt class="descname">response_type</tt><a class="headerlink" href="#ooxcb.protocol.shape.NotifyEvent.response_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.GetRectanglesReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">GetRectanglesReply</tt><a class="headerlink" href="#ooxcb.protocol.shape.GetRectanglesReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.shape.GetRectanglesReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.GetRectanglesReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.GetRectanglesReply.ordering">
+<tt class="descname">ordering</tt><a class="headerlink" href="#ooxcb.protocol.shape.GetRectanglesReply.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.GetRectanglesReply.rectangles">
+<tt class="descname">rectangles</tt><a class="headerlink" href="#ooxcb.protocol.shape.GetRectanglesReply.rectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.GetRectanglesReply.rectangles_len">
+<tt class="descname">rectangles_len</tt><a class="headerlink" href="#ooxcb.protocol.shape.GetRectanglesReply.rectangles_len" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.QueryExtentsCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">QueryExtentsCookie</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.SK">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">SK</tt><a class="headerlink" href="#ooxcb.protocol.shape.SK" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.shape.SK.Bounding">
+<tt class="descname">Bounding</tt><a class="headerlink" href="#ooxcb.protocol.shape.SK.Bounding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.SK.Clip">
+<tt class="descname">Clip</tt><a class="headerlink" href="#ooxcb.protocol.shape.SK.Clip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.SK.Input">
+<tt class="descname">Input</tt><a class="headerlink" href="#ooxcb.protocol.shape.SK.Input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.SO">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">SO</tt><a class="headerlink" href="#ooxcb.protocol.shape.SO" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.shape.SO.Set">
+<tt class="descname">Set</tt><a class="headerlink" href="#ooxcb.protocol.shape.SO.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.SO.Union">
+<tt class="descname">Union</tt><a class="headerlink" href="#ooxcb.protocol.shape.SO.Union" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.SO.Intersect">
+<tt class="descname">Intersect</tt><a class="headerlink" href="#ooxcb.protocol.shape.SO.Intersect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.SO.Subtract">
+<tt class="descname">Subtract</tt><a class="headerlink" href="#ooxcb.protocol.shape.SO.Subtract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.shape.SO.Invert">
+<tt class="descname">Invert</tt><a class="headerlink" href="#ooxcb.protocol.shape.SO.Invert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.InputSelectedReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">InputSelectedReply</tt><a class="headerlink" href="#ooxcb.protocol.shape.InputSelectedReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.shape.InputSelectedReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.InputSelectedReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.InputSelectedReply.enabled">
+<tt class="descname">enabled</tt><a class="headerlink" href="#ooxcb.protocol.shape.InputSelectedReply.enabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">QueryExtentsReply</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_width">
+<tt class="descname">clip_shape_extents_width</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_y">
+<tt class="descname">bounding_shape_extents_y</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.bounding_shaped">
+<tt class="descname">bounding_shaped</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.bounding_shaped" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_width">
+<tt class="descname">bounding_shape_extents_width</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_height">
+<tt class="descname">bounding_shape_extents_height</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_y">
+<tt class="descname">clip_shape_extents_y</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_x">
+<tt class="descname">clip_shape_extents_x</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_height">
+<tt class="descname">clip_shape_extents_height</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.clip_shape_extents_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.clip_shaped">
+<tt class="descname">clip_shaped</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.clip_shaped" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_x">
+<tt class="descname">bounding_shape_extents_x</tt><a class="headerlink" href="#ooxcb.protocol.shape.QueryExtentsReply.bounding_shape_extents_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.GetRectanglesCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">GetRectanglesCookie</tt><a class="headerlink" href="#ooxcb.protocol.shape.GetRectanglesCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.shape.InputSelectedCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.shape.</tt><tt class="descname">InputSelectedCookie</tt><a class="headerlink" href="#ooxcb.protocol.shape.InputSelectedCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="screensaver.html"
+                                  title="previous chapter">ooxcb.protocol.screensaver</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="xfixes.html"
+                                  title="next chapter">ooxcb.protocol.xfixes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/api/protocol/shape.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="xfixes.html" title="ooxcb.protocol.xfixes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="screensaver.html" title="ooxcb.protocol.screensaver"
+             >previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" >ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>

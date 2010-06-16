@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb api documentation &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../index.html" />
+    <link rel="next" title="Additional modules" href="contrib/index.html" />
+    <link rel="prev" title="How to ..." href="../howto.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="contrib/index.html" title="Additional modules"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../howto.html" title="How to ..."
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ooxcb v1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="ooxcb-api-documentation">
+<h1>ooxcb api documentation<a class="headerlink" href="#ooxcb-api-documentation" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="contrib/index.html">Additional modules</a><ul>
+<li class="toctree-l2"><a class="reference external" href="contrib/cairo.html">ooxcb.contrib.cairo</a></li>
+<li class="toctree-l2"><a class="reference external" href="contrib/cursors.html">ooxcb.contrib.cursors</a></li>
+<li class="toctree-l2"><a class="reference external" href="contrib/ewmh.html">ooxcb.contrib.ewmh</a></li>
+<li class="toctree-l2"><a class="reference external" href="contrib/icccm.html">ooxcb.contrib.icccm</a></li>
+<li class="toctree-l2"><a class="reference external" href="contrib/gdk.html">ooxcb.contrib.gdk</a></li>
+<li class="toctree-l2"><a class="reference external" href="contrib/pil.html">ooxcb.contrib.pil</a></li>
+<li class="toctree-l2"><a class="reference external" href="contrib/sizehints.html">ooxcb.contrib.sizehints</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="protocol/index.html">ooxcb.protocol</a><ul>
+<li class="toctree-l2"><a class="reference external" href="protocol/bigreq.html">ooxcb.protocol.bigreq</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/composite.html">ooxcb.protocol.composite</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/damage.html">ooxcb.protocol.damage</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/render.html">ooxcb.protocol.render</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/screensaver.html">ooxcb.protocol.screensaver</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/shape.html">ooxcb.protocol.shape</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/xfixes.html">ooxcb.protocol.xfixes</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/xproto.html">ooxcb.protocol.xproto</a></li>
+<li class="toctree-l2"><a class="reference external" href="protocol/xtest.html">ooxcb.protocol.xtest</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="ooxcb.html">ooxcb</a></li>
+<li class="toctree-l1"><a class="reference external" href="atoms.html">ooxcb.atoms</a></li>
+<li class="toctree-l1"><a class="reference external" href="connection.html">ooxcb.conn</a></li>
+<li class="toctree-l1"><a class="reference external" href="constant.html">ooxcb.constant</a></li>
+<li class="toctree-l1"><a class="reference external" href="cookie.html">ooxcb.cookie</a></li>
+<li class="toctree-l1"><a class="reference external" href="eventsys.html">ooxcb.eventsys</a></li>
+<li class="toctree-l1"><a class="reference external" href="exception.html">ooxcb.exception</a></li>
+<li class="toctree-l1"><a class="reference external" href="ext.html">ooxcb.ext</a></li>
+<li class="toctree-l1"><a class="reference external" href="keysymdef.html">ooxcb.keysymdef</a></li>
+<li class="toctree-l1"><a class="reference external" href="keysyms.html">ooxcb.keysyms</a></li>
+<li class="toctree-l1"><a class="reference external" href="libxcb.html">ooxcb.libxcb</a></li>
+<li class="toctree-l1"><a class="reference external" href="list.html">ooxcb.list</a></li>
+<li class="toctree-l1"><a class="reference external" href="memstream.html">ooxcb.memstream</a></li>
+<li class="toctree-l1"><a class="reference external" href="protobj.html">ooxcb.protobj</a></li>
+<li class="toctree-l1"><a class="reference external" href="resource.html">ooxcb.resource</a></li>
+<li class="toctree-l1"><a class="reference external" href="types.html">ooxcb.types</a></li>
+<li class="toctree-l1"><a class="reference external" href="util.html">ooxcb.util</a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../howto.html"
+                                  title="previous chapter">How to ...</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="contrib/index.html"
+                                  title="next chapter">Additional modules</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/api/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="contrib/index.html" title="Additional modules"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../howto.html" title="How to ..."
+             >previous</a> |</li>
+        <li><a href="../index.html">ooxcb v1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>

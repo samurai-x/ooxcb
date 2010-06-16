@@ -1,0 +1,1617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb.protocol.render &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../../index.html" />
+    <link rel="up" title="ooxcb.protocol" href="index.html" />
+    <link rel="next" title="ooxcb.protocol.screensaver" href="screensaver.html" />
+    <link rel="prev" title="ooxcb.protocol.damage" href="damage.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="screensaver.html" title="ooxcb.protocol.screensaver"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="damage.html" title="ooxcb.protocol.damage"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-ooxcb.protocol.render">
+<h1>ooxcb.protocol.render<a class="headerlink" href="#module-ooxcb.protocol.render" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ooxcb.protocol.render.BadGlyph">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">BadGlyph</tt><a class="headerlink" href="#ooxcb.protocol.render.BadGlyph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PictFormatError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PictFormatError</tt><a class="headerlink" href="#ooxcb.protocol.render.PictFormatError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.PictFormatError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.PictFormatError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Directformat">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Directformat</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Directformat.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Directformat.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.alpha_shift">
+<tt class="descname">alpha_shift</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.alpha_shift" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.blue_shift">
+<tt class="descname">blue_shift</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.blue_shift" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.red_shift">
+<tt class="descname">red_shift</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.red_shift" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.blue_mask">
+<tt class="descname">blue_mask</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.blue_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.alpha_mask">
+<tt class="descname">alpha_mask</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.alpha_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.green_mask">
+<tt class="descname">green_mask</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.green_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.red_mask">
+<tt class="descname">red_mask</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.red_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Directformat.green_shift">
+<tt class="descname">green_shift</tt><a class="headerlink" href="#ooxcb.protocol.render.Directformat.green_shift" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.ScreenMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">ScreenMixin</tt><a class="headerlink" href="#ooxcb.protocol.render.ScreenMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.ScreenMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.render.ScreenMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.ScreenMixin.get_render_pictformat">
+<tt class="descname">get_render_pictformat</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.ScreenMixin.get_render_pictformat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.GlyphSetError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">GlyphSetError</tt><a class="headerlink" href="#ooxcb.protocol.render.GlyphSetError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.GlyphSetError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.GlyphSetError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.BadPicture">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">BadPicture</tt><a class="headerlink" href="#ooxcb.protocol.render.BadPicture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryVersionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryVersionCookie</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryVersionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Pictdepth">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Pictdepth</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictdepth" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Pictdepth.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictdepth.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictdepth.visuals">
+<tt class="descname">visuals</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictdepth.visuals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictdepth.num_visuals">
+<tt class="descname">num_visuals</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictdepth.num_visuals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictdepth.depth">
+<tt class="descname">depth</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictdepth.depth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PictureError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PictureError</tt><a class="headerlink" href="#ooxcb.protocol.render.PictureError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.PictureError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.PictureError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Picture">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Picture</tt><a class="headerlink" href="#ooxcb.protocol.render.Picture" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Picture.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em>, <em>xid</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.change_checked">
+<tt class="descname">change_checked</tt><big>(</big><em>self</em>, <em>**values</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.change_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.change">
+<tt class="descname">change</tt><big>(</big><em>self</em>, <em>**values</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.set_clip_rectangles_checked">
+<tt class="descname">set_clip_rectangles_checked</tt><big>(</big><em>self</em>, <em>clip_x_origin</em>, <em>clip_y_origin</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.set_clip_rectangles_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.set_clip_rectangles">
+<tt class="descname">set_clip_rectangles</tt><big>(</big><em>self</em>, <em>clip_x_origin</em>, <em>clip_y_origin</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.set_clip_rectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.free_checked">
+<tt class="descname">free_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.free_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.free">
+<tt class="descname">free</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.free" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_checked">
+<tt class="descname">composite_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>mask</em>, <em>dst</em>, <em>width</em>, <em>height</em>, <em>src_x=0</em>, <em>src_y=0</em>, <em>mask_x=0</em>, <em>mask_y=0</em>, <em>dst_x=0</em>, <em>dst_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite">
+<tt class="descname">composite</tt><big>(</big><em>self</em>, <em>op</em>, <em>mask</em>, <em>dst</em>, <em>width</em>, <em>height</em>, <em>src_x=0</em>, <em>src_y=0</em>, <em>mask_x=0</em>, <em>mask_y=0</em>, <em>dst_x=0</em>, <em>dst_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.trapezoids_checked">
+<tt class="descname">trapezoids_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>traps</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.trapezoids_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.trapezoids">
+<tt class="descname">trapezoids</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>traps</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.trapezoids" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.triangles_checked">
+<tt class="descname">triangles_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>triangles</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.triangles_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.triangles">
+<tt class="descname">triangles</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>triangles</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.triangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.tri_strip_checked">
+<tt class="descname">tri_strip_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>points</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.tri_strip_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.tri_strip">
+<tt class="descname">tri_strip</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>points</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.tri_strip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.tri_fan_checked">
+<tt class="descname">tri_fan_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>points</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.tri_fan_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.tri_fan">
+<tt class="descname">tri_fan</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>points</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.tri_fan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_glyphs8_checked">
+<tt class="descname">composite_glyphs8_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>glyphset</em>, <em>glyphcmds</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_glyphs8_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_glyphs8">
+<tt class="descname">composite_glyphs8</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>glyphset</em>, <em>glyphcmds</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_glyphs8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_glyphs16_checked">
+<tt class="descname">composite_glyphs16_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>glyphset</em>, <em>glyphcmds</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_glyphs16_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_glyphs16">
+<tt class="descname">composite_glyphs16</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>glyphset</em>, <em>glyphcmds</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_glyphs16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_glyphs32_checked">
+<tt class="descname">composite_glyphs32_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>glyphset</em>, <em>glyphcmds</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_glyphs32_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.composite_glyphs32">
+<tt class="descname">composite_glyphs32</tt><big>(</big><em>self</em>, <em>op</em>, <em>dst</em>, <em>glyphset</em>, <em>glyphcmds</em>, <em>mask_format=None</em>, <em>src_x=0</em>, <em>src_y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.composite_glyphs32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.fill_rectangles_checked">
+<tt class="descname">fill_rectangles_checked</tt><big>(</big><em>self</em>, <em>op</em>, <em>color</em>, <em>rects</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.fill_rectangles_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.fill_rectangles">
+<tt class="descname">fill_rectangles</tt><big>(</big><em>self</em>, <em>op</em>, <em>color</em>, <em>rects</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.fill_rectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.set_transform_checked">
+<tt class="descname">set_transform_checked</tt><big>(</big><em>self</em>, <em>transform</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.set_transform_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.set_transform">
+<tt class="descname">set_transform</tt><big>(</big><em>self</em>, <em>transform</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.set_transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.set_filter_checked">
+<tt class="descname">set_filter_checked</tt><big>(</big><em>self</em>, <em>filter</em>, <em>values</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.set_filter_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.set_filter">
+<tt class="descname">set_filter</tt><big>(</big><em>self</em>, <em>filter</em>, <em>values</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.set_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.add_traps_checked">
+<tt class="descname">add_traps_checked</tt><big>(</big><em>self</em>, <em>traps</em>, <em>x_off=0</em>, <em>y_off=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.add_traps_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Picture.add_traps">
+<tt class="descname">add_traps</tt><big>(</big><em>self</em>, <em>traps</em>, <em>x_off=0</em>, <em>y_off=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.add_traps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Picture.create">
+<em class="property">classmethod </em><tt class="descname">create</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>drawable</em>, <em>format</em>, <em>**values</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Picture.create_solid_fill">
+<em class="property">classmethod </em><tt class="descname">create_solid_fill</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>color</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.create_solid_fill" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Picture.create_linear_gradient">
+<em class="property">classmethod </em><tt class="descname">create_linear_gradient</tt><big>(</big><em>cls</em>, <em>p1</em>, <em>p2</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.create_linear_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Picture.create_radial_gradient">
+<em class="property">classmethod </em><tt class="descname">create_radial_gradient</tt><big>(</big><em>cls</em>, <em>p1</em>, <em>p2</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.create_radial_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Picture.create_conical_gradient">
+<em class="property">classmethod </em><tt class="descname">create_conical_gradient</tt><big>(</big><em>cls</em>, <em>center</em>, <em>angle</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Picture.create_conical_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Repeat">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Repeat</tt><a class="headerlink" href="#ooxcb.protocol.render.Repeat" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.Repeat._None">
+<tt class="descname">_None</tt><a class="headerlink" href="#ooxcb.protocol.render.Repeat._None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.Repeat.Normal">
+<tt class="descname">Normal</tt><a class="headerlink" href="#ooxcb.protocol.render.Repeat.Normal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.Repeat.Pad">
+<tt class="descname">Pad</tt><a class="headerlink" href="#ooxcb.protocol.render.Repeat.Pad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.Repeat.Reflect">
+<tt class="descname">Reflect</tt><a class="headerlink" href="#ooxcb.protocol.render.Repeat.Reflect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Triangle">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Triangle</tt><a class="headerlink" href="#ooxcb.protocol.render.Triangle" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Triangle.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Triangle.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Triangle.p2">
+<tt class="descname">p2</tt><a class="headerlink" href="#ooxcb.protocol.render.Triangle.p2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Triangle.p3">
+<tt class="descname">p3</tt><a class="headerlink" href="#ooxcb.protocol.render.Triangle.p3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Triangle.p1">
+<tt class="descname">p1</tt><a class="headerlink" href="#ooxcb.protocol.render.Triangle.p1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Glyphset">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Glyphset</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphset" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em>, <em>xid</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.reference_checked">
+<tt class="descname">reference_checked</tt><big>(</big><em>self</em>, <em>existing</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.reference_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.reference">
+<tt class="descname">reference</tt><big>(</big><em>self</em>, <em>existing</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.reference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.free_checked">
+<tt class="descname">free_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.free_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.free">
+<tt class="descname">free</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.free" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.add_glyphs_checked">
+<tt class="descname">add_glyphs_checked</tt><big>(</big><em>self</em>, <em>glyphids</em>, <em>glyphs</em>, <em>data</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.add_glyphs_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.add_glyphs">
+<tt class="descname">add_glyphs</tt><big>(</big><em>self</em>, <em>glyphids</em>, <em>glyphs</em>, <em>data</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.add_glyphs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.free_glyphs_checked">
+<tt class="descname">free_glyphs_checked</tt><big>(</big><em>self</em>, <em>glyphs</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.free_glyphs_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Glyphset.free_glyphs">
+<tt class="descname">free_glyphs</tt><big>(</big><em>self</em>, <em>glyphs</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphset.free_glyphs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Pictvisual">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Pictvisual</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictvisual" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Pictvisual.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictvisual.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictvisual.visual">
+<tt class="descname">visual</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictvisual.visual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictvisual.format">
+<tt class="descname">format</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictvisual.format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Spanfix">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Spanfix</tt><a class="headerlink" href="#ooxcb.protocol.render.Spanfix" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Spanfix.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Spanfix.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Spanfix.y">
+<tt class="descname">y</tt><a class="headerlink" href="#ooxcb.protocol.render.Spanfix.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Spanfix.r">
+<tt class="descname">r</tt><a class="headerlink" href="#ooxcb.protocol.render.Spanfix.r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Spanfix.l">
+<tt class="descname">l</tt><a class="headerlink" href="#ooxcb.protocol.render.Spanfix.l" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.DrawableMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">DrawableMixin</tt><a class="headerlink" href="#ooxcb.protocol.render.DrawableMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.DrawableMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.render.DrawableMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.DrawableMixin.query_filters">
+<tt class="descname">query_filters</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.DrawableMixin.query_filters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.DrawableMixin.query_filters_unchecked">
+<tt class="descname">query_filters_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.DrawableMixin.query_filters_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PictOp">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PictOp</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Clear">
+<tt class="descname">Clear</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Src">
+<tt class="descname">Src</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Src" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Dst">
+<tt class="descname">Dst</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Dst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Over">
+<tt class="descname">Over</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Over" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.OverReverse">
+<tt class="descname">OverReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.OverReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.In">
+<tt class="descname">In</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.In" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.InReverse">
+<tt class="descname">InReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.InReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Out">
+<tt class="descname">Out</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Out" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.OutReverse">
+<tt class="descname">OutReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.OutReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Atop">
+<tt class="descname">Atop</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Atop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.AtopReverse">
+<tt class="descname">AtopReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.AtopReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Xor">
+<tt class="descname">Xor</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Xor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Add">
+<tt class="descname">Add</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.Saturate">
+<tt class="descname">Saturate</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.Saturate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointClear">
+<tt class="descname">DisjointClear</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointClear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointSrc">
+<tt class="descname">DisjointSrc</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointSrc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointDst">
+<tt class="descname">DisjointDst</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointDst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointOver">
+<tt class="descname">DisjointOver</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointOver" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointOverReverse">
+<tt class="descname">DisjointOverReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointOverReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointIn">
+<tt class="descname">DisjointIn</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointIn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointInReverse">
+<tt class="descname">DisjointInReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointInReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointOut">
+<tt class="descname">DisjointOut</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointOut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointOutReverse">
+<tt class="descname">DisjointOutReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointOutReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointAtop">
+<tt class="descname">DisjointAtop</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointAtop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointAtopReverse">
+<tt class="descname">DisjointAtopReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointAtopReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.DisjointXor">
+<tt class="descname">DisjointXor</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.DisjointXor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointClear">
+<tt class="descname">ConjointClear</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointClear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointSrc">
+<tt class="descname">ConjointSrc</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointSrc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointDst">
+<tt class="descname">ConjointDst</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointDst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointOver">
+<tt class="descname">ConjointOver</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointOver" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointOverReverse">
+<tt class="descname">ConjointOverReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointOverReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointIn">
+<tt class="descname">ConjointIn</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointIn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointInReverse">
+<tt class="descname">ConjointInReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointInReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointOut">
+<tt class="descname">ConjointOut</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointOut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointOutReverse">
+<tt class="descname">ConjointOutReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointOutReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointAtop">
+<tt class="descname">ConjointAtop</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointAtop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointAtopReverse">
+<tt class="descname">ConjointAtopReverse</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointAtopReverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictOp.ConjointXor">
+<tt class="descname">ConjointXor</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOp.ConjointXor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Pictscreen">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Pictscreen</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictscreen" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Pictscreen.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictscreen.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictscreen.depths">
+<tt class="descname">depths</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictscreen.depths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictscreen.fallback">
+<tt class="descname">fallback</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictscreen.fallback" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictscreen.num_depths">
+<tt class="descname">num_depths</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictscreen.num_depths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Animcursorelt">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Animcursorelt</tt><a class="headerlink" href="#ooxcb.protocol.render.Animcursorelt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Animcursorelt.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Animcursorelt.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Animcursorelt.cursor">
+<tt class="descname">cursor</tt><a class="headerlink" href="#ooxcb.protocol.render.Animcursorelt.cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Animcursorelt.delay">
+<tt class="descname">delay</tt><a class="headerlink" href="#ooxcb.protocol.render.Animcursorelt.delay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.GlyphSet">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">GlyphSet</tt><a class="headerlink" href="#ooxcb.protocol.render.GlyphSet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="classmethod">
+<dt id="ooxcb.protocol.render.GlyphSet.create">
+<em class="property">classmethod </em><tt class="descname">create</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>format</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.GlyphSet.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.renderExtension">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">renderExtension</tt><a class="headerlink" href="#ooxcb.protocol.render.renderExtension" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.renderExtension.header">
+<tt class="descname">header</tt><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.query_version">
+<tt class="descname">query_version</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.query_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.query_version_unchecked">
+<tt class="descname">query_version_unchecked</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.query_version_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.query_pict_formats">
+<tt class="descname">query_pict_formats</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.query_pict_formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.query_pict_formats_unchecked">
+<tt class="descname">query_pict_formats_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.query_pict_formats_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_picture_checked">
+<tt class="descname">create_picture_checked</tt><big>(</big><em>self</em>, <em>pid</em>, <em>drawable</em>, <em>format</em>, <em>value_mask</em>, <em>value_list</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_picture_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_picture">
+<tt class="descname">create_picture</tt><big>(</big><em>self</em>, <em>pid</em>, <em>drawable</em>, <em>format</em>, <em>value_mask</em>, <em>value_list</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_picture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_glyph_set_checked">
+<tt class="descname">create_glyph_set_checked</tt><big>(</big><em>self</em>, <em>gsid</em>, <em>format</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_glyph_set_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_glyph_set">
+<tt class="descname">create_glyph_set</tt><big>(</big><em>self</em>, <em>gsid</em>, <em>format</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_glyph_set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_cursor_checked">
+<tt class="descname">create_cursor_checked</tt><big>(</big><em>self</em>, <em>cid</em>, <em>source</em>, <em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_cursor_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_cursor">
+<tt class="descname">create_cursor</tt><big>(</big><em>self</em>, <em>cid</em>, <em>source</em>, <em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_anim_cursor_checked">
+<tt class="descname">create_anim_cursor_checked</tt><big>(</big><em>self</em>, <em>cid</em>, <em>cursors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_anim_cursor_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_anim_cursor">
+<tt class="descname">create_anim_cursor</tt><big>(</big><em>self</em>, <em>cid</em>, <em>cursors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_anim_cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_solid_fill_checked">
+<tt class="descname">create_solid_fill_checked</tt><big>(</big><em>self</em>, <em>picture</em>, <em>color</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_solid_fill_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_solid_fill">
+<tt class="descname">create_solid_fill</tt><big>(</big><em>self</em>, <em>picture</em>, <em>color</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_solid_fill" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_linear_gradient_checked">
+<tt class="descname">create_linear_gradient_checked</tt><big>(</big><em>self</em>, <em>picture</em>, <em>p1</em>, <em>p2</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_linear_gradient_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_linear_gradient">
+<tt class="descname">create_linear_gradient</tt><big>(</big><em>self</em>, <em>picture</em>, <em>p1</em>, <em>p2</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_linear_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_radial_gradient_checked">
+<tt class="descname">create_radial_gradient_checked</tt><big>(</big><em>self</em>, <em>picture</em>, <em>inner</em>, <em>outer</em>, <em>inner_radius</em>, <em>outer_radius</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_radial_gradient_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_radial_gradient">
+<tt class="descname">create_radial_gradient</tt><big>(</big><em>self</em>, <em>picture</em>, <em>inner</em>, <em>outer</em>, <em>inner_radius</em>, <em>outer_radius</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_radial_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_conical_gradient_checked">
+<tt class="descname">create_conical_gradient_checked</tt><big>(</big><em>self</em>, <em>picture</em>, <em>center</em>, <em>angle</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_conical_gradient_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.renderExtension.create_conical_gradient">
+<tt class="descname">create_conical_gradient</tt><big>(</big><em>self</em>, <em>picture</em>, <em>center</em>, <em>angle</em>, <em>num_stops</em>, <em>stops</em>, <em>colors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.renderExtension.create_conical_gradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Pictforminfo">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Pictforminfo</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Pictforminfo.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictforminfo.colormap">
+<tt class="descname">colormap</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo.colormap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictforminfo.depth">
+<tt class="descname">depth</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo.depth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictforminfo.type">
+<tt class="descname">type</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictforminfo.id">
+<tt class="descname">id</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pictforminfo.direct">
+<tt class="descname">direct</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictforminfo.direct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.BadGlyphSet">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">BadGlyphSet</tt><a class="headerlink" href="#ooxcb.protocol.render.BadGlyphSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PictType">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PictType</tt><a class="headerlink" href="#ooxcb.protocol.render.PictType" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.PictType.Indexed">
+<tt class="descname">Indexed</tt><a class="headerlink" href="#ooxcb.protocol.render.PictType.Indexed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PictType.Direct">
+<tt class="descname">Direct</tt><a class="headerlink" href="#ooxcb.protocol.render.PictType.Direct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.SubPixel">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">SubPixel</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.SubPixel.Unknown">
+<tt class="descname">Unknown</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel.Unknown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.SubPixel.HorizontalRGB">
+<tt class="descname">HorizontalRGB</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel.HorizontalRGB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.SubPixel.HorizontalBGR">
+<tt class="descname">HorizontalBGR</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel.HorizontalBGR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.SubPixel.VerticalRGB">
+<tt class="descname">VerticalRGB</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel.VerticalRGB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.SubPixel.VerticalBGR">
+<tt class="descname">VerticalBGR</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel.VerticalBGR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.SubPixel._None">
+<tt class="descname">_None</tt><a class="headerlink" href="#ooxcb.protocol.render.SubPixel._None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Pointfix">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Pointfix</tt><a class="headerlink" href="#ooxcb.protocol.render.Pointfix" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Pointfix.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pointfix.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pointfix.y">
+<tt class="descname">y</tt><a class="headerlink" href="#ooxcb.protocol.render.Pointfix.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Pointfix.x">
+<tt class="descname">x</tt><a class="headerlink" href="#ooxcb.protocol.render.Pointfix.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.BadPictFormat">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">BadPictFormat</tt><a class="headerlink" href="#ooxcb.protocol.render.BadPictFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Indexvalue">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Indexvalue</tt><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Indexvalue.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Indexvalue.blue">
+<tt class="descname">blue</tt><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue.blue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Indexvalue.alpha">
+<tt class="descname">alpha</tt><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue.alpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Indexvalue.green">
+<tt class="descname">green</tt><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue.green" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Indexvalue.pixel">
+<tt class="descname">pixel</tt><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue.pixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Indexvalue.red">
+<tt class="descname">red</tt><a class="headerlink" href="#ooxcb.protocol.render.Indexvalue.red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Cursor">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Cursor</tt><a class="headerlink" href="#ooxcb.protocol.render.Cursor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="classmethod">
+<dt id="ooxcb.protocol.render.Cursor.create">
+<em class="property">classmethod </em><tt class="descname">create</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>source</em>, <em>x=0</em>, <em>y=0</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Cursor.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Cursor.create_anim">
+<em class="property">classmethod </em><tt class="descname">create_anim</tt><big>(</big><em>cls</em>, <em>cursors</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Cursor.create_anim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryPictIndexValuesReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryPictIndexValuesReply</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictIndexValuesReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.QueryPictIndexValuesReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.QueryPictIndexValuesReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictIndexValuesReply.num_values">
+<tt class="descname">num_values</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictIndexValuesReply.num_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictIndexValuesReply.values">
+<tt class="descname">values</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictIndexValuesReply.values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryFiltersReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryFiltersReply</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.QueryFiltersReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryFiltersReply.aliases">
+<tt class="descname">aliases</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersReply.aliases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryFiltersReply.filters">
+<tt class="descname">filters</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersReply.filters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryFiltersReply.num_aliases">
+<tt class="descname">num_aliases</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersReply.num_aliases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryFiltersReply.num_filters">
+<tt class="descname">num_filters</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersReply.num_filters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Linefix">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Linefix</tt><a class="headerlink" href="#ooxcb.protocol.render.Linefix" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Linefix.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Linefix.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Linefix.p2">
+<tt class="descname">p2</tt><a class="headerlink" href="#ooxcb.protocol.render.Linefix.p2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Linefix.p1">
+<tt class="descname">p1</tt><a class="headerlink" href="#ooxcb.protocol.render.Linefix.p1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Trapezoid">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Trapezoid</tt><a class="headerlink" href="#ooxcb.protocol.render.Trapezoid" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Trapezoid.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Trapezoid.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Trapezoid.top">
+<tt class="descname">top</tt><a class="headerlink" href="#ooxcb.protocol.render.Trapezoid.top" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Trapezoid.left">
+<tt class="descname">left</tt><a class="headerlink" href="#ooxcb.protocol.render.Trapezoid.left" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Trapezoid.right">
+<tt class="descname">right</tt><a class="headerlink" href="#ooxcb.protocol.render.Trapezoid.right" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Trapezoid.bottom">
+<tt class="descname">bottom</tt><a class="headerlink" href="#ooxcb.protocol.render.Trapezoid.bottom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Trap">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Trap</tt><a class="headerlink" href="#ooxcb.protocol.render.Trap" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Trap.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Trap.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Trap.top">
+<tt class="descname">top</tt><a class="headerlink" href="#ooxcb.protocol.render.Trap.top" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Trap.bot">
+<tt class="descname">bot</tt><a class="headerlink" href="#ooxcb.protocol.render.Trap.bot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.CP">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">CP</tt><a class="headerlink" href="#ooxcb.protocol.render.CP" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.CP.Repeat">
+<tt class="descname">Repeat</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.Repeat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.AlphaMap">
+<tt class="descname">AlphaMap</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.AlphaMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.AlphaXOrigin">
+<tt class="descname">AlphaXOrigin</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.AlphaXOrigin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.AlphaYOrigin">
+<tt class="descname">AlphaYOrigin</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.AlphaYOrigin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.ClipXOrigin">
+<tt class="descname">ClipXOrigin</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.ClipXOrigin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.ClipYOrigin">
+<tt class="descname">ClipYOrigin</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.ClipYOrigin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.ClipMask">
+<tt class="descname">ClipMask</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.ClipMask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.GraphicsExposure">
+<tt class="descname">GraphicsExposure</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.GraphicsExposure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.SubwindowMode">
+<tt class="descname">SubwindowMode</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.SubwindowMode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.PolyEdge">
+<tt class="descname">PolyEdge</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.PolyEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.PolyMode">
+<tt class="descname">PolyMode</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.PolyMode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.Dither">
+<tt class="descname">Dither</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.Dither" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.CP.ComponentAlpha">
+<tt class="descname">ComponentAlpha</tt><a class="headerlink" href="#ooxcb.protocol.render.CP.ComponentAlpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryPictIndexValuesCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryPictIndexValuesCookie</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictIndexValuesCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryVersionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryVersionReply</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryVersionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.QueryVersionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.QueryVersionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryVersionReply.major_version">
+<tt class="descname">major_version</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryVersionReply.major_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryVersionReply.minor_version">
+<tt class="descname">minor_version</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryVersionReply.minor_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PictOpError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PictOpError</tt><a class="headerlink" href="#ooxcb.protocol.render.PictOpError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.PictOpError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.PictOpError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Glyphinfo">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Glyphinfo</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Glyphinfo.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Glyphinfo.x_off">
+<tt class="descname">x_off</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.x_off" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Glyphinfo.height">
+<tt class="descname">height</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Glyphinfo.width">
+<tt class="descname">width</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Glyphinfo.y">
+<tt class="descname">y</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Glyphinfo.x">
+<tt class="descname">x</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Glyphinfo.y_off">
+<tt class="descname">y_off</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyphinfo.y_off" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryPictFormatsCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryPictFormatsCookie</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PolyEdge">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PolyEdge</tt><a class="headerlink" href="#ooxcb.protocol.render.PolyEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.PolyEdge.Sharp">
+<tt class="descname">Sharp</tt><a class="headerlink" href="#ooxcb.protocol.render.PolyEdge.Sharp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PolyEdge.Smooth">
+<tt class="descname">Smooth</tt><a class="headerlink" href="#ooxcb.protocol.render.PolyEdge.Smooth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Color">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Color</tt><a class="headerlink" href="#ooxcb.protocol.render.Color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Color.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Color.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.render.Color.create">
+<em class="property">classmethod </em><tt class="descname">create</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>red</em>, <em>green</em>, <em>blue</em>, <em>alpha</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Color.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Color.blue">
+<tt class="descname">blue</tt><a class="headerlink" href="#ooxcb.protocol.render.Color.blue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Color.alpha">
+<tt class="descname">alpha</tt><a class="headerlink" href="#ooxcb.protocol.render.Color.alpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Color.green">
+<tt class="descname">green</tt><a class="headerlink" href="#ooxcb.protocol.render.Color.green" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Color.red">
+<tt class="descname">red</tt><a class="headerlink" href="#ooxcb.protocol.render.Color.red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.BadPictOp">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">BadPictOp</tt><a class="headerlink" href="#ooxcb.protocol.render.BadPictOp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.GlyphError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">GlyphError</tt><a class="headerlink" href="#ooxcb.protocol.render.GlyphError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.GlyphError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.GlyphError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Transform">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Transform</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Transform.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Transform.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix21">
+<tt class="descname">matrix21</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix21" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix23">
+<tt class="descname">matrix23</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix23" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix22">
+<tt class="descname">matrix22</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix22" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix11">
+<tt class="descname">matrix11</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix11" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix12">
+<tt class="descname">matrix12</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix12" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix13">
+<tt class="descname">matrix13</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix13" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix32">
+<tt class="descname">matrix32</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix33">
+<tt class="descname">matrix33</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix33" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.Transform.matrix31">
+<tt class="descname">matrix31</tt><a class="headerlink" href="#ooxcb.protocol.render.Transform.matrix31" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Pictformat">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Pictformat</tt><a class="headerlink" href="#ooxcb.protocol.render.Pictformat" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Pictformat.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em>, <em>xid</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictformat.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Pictformat.query_pict_index_values">
+<tt class="descname">query_pict_index_values</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictformat.query_pict_index_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.render.Pictformat.query_pict_index_values_unchecked">
+<tt class="descname">query_pict_index_values_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Pictformat.query_pict_index_values_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryFiltersCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryFiltersCookie</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryFiltersCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.PolyMode">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">PolyMode</tt><a class="headerlink" href="#ooxcb.protocol.render.PolyMode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.render.PolyMode.Precise">
+<tt class="descname">Precise</tt><a class="headerlink" href="#ooxcb.protocol.render.PolyMode.Precise" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.render.PolyMode.Imprecise">
+<tt class="descname">Imprecise</tt><a class="headerlink" href="#ooxcb.protocol.render.PolyMode.Imprecise" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">QueryPictFormatsReply</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.num_formats">
+<tt class="descname">num_formats</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.num_formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.num_subpixel">
+<tt class="descname">num_subpixel</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.num_subpixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.screens">
+<tt class="descname">screens</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.screens" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.num_screens">
+<tt class="descname">num_screens</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.num_screens" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.formats">
+<tt class="descname">formats</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.num_visuals">
+<tt class="descname">num_visuals</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.num_visuals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.num_depths">
+<tt class="descname">num_depths</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.num_depths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.render.QueryPictFormatsReply.subpixels">
+<tt class="descname">subpixels</tt><a class="headerlink" href="#ooxcb.protocol.render.QueryPictFormatsReply.subpixels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.render.Glyph">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.render.</tt><tt class="descname">Glyph</tt><a class="headerlink" href="#ooxcb.protocol.render.Glyph" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.render.Glyph.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em>, <em>xid</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.render.Glyph.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="damage.html"
+                                  title="previous chapter">ooxcb.protocol.damage</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="screensaver.html"
+                                  title="next chapter">ooxcb.protocol.screensaver</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/api/protocol/render.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="screensaver.html" title="ooxcb.protocol.screensaver"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="damage.html" title="ooxcb.protocol.damage"
+             >previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" >ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>

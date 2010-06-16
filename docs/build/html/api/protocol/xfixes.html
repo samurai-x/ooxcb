@@ -1,0 +1,952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb.protocol.xfixes &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../../index.html" />
+    <link rel="up" title="ooxcb.protocol" href="index.html" />
+    <link rel="next" title="ooxcb.protocol.xproto" href="xproto.html" />
+    <link rel="prev" title="ooxcb.protocol.shape" href="shape.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="xproto.html" title="ooxcb.protocol.xproto"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="shape.html" title="ooxcb.protocol.shape"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-ooxcb.protocol.xfixes">
+<h1>ooxcb.protocol.xfixes<a class="headerlink" href="#module-ooxcb.protocol.xfixes" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.BadRegion">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">BadRegion</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.BadRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.SelectionEventMask">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">SelectionEventMask</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEventMask" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionEventMask.SetSelectionOwner">
+<tt class="descname">SetSelectionOwner</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEventMask.SetSelectionOwner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionEventMask.SelectionWindowDestroy">
+<tt class="descname">SelectionWindowDestroy</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEventMask.SelectionWindowDestroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionEventMask.SelectionClientClose">
+<tt class="descname">SelectionClientClose</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEventMask.SelectionClientClose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.SaveSetMode">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">SaveSetMode</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetMode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.SaveSetMode.Insert">
+<tt class="descname">Insert</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetMode.Insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SaveSetMode.Delete">
+<tt class="descname">Delete</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetMode.Delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.CursorNotify">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">CursorNotify</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotify" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.CursorNotify.DisplayCursor">
+<tt class="descname">DisplayCursor</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotify.DisplayCursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">CursorNotifyEvent</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.event_name">
+<tt class="descname">event_name</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.event_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.opcode">
+<tt class="descname">opcode</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.opcode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.event_target_class">
+<tt class="descname">event_target_class</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.event_target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.cursor_serial">
+<tt class="descname">cursor_serial</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.cursor_serial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.name">
+<tt class="descname">name</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.timestamp">
+<tt class="descname">timestamp</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.subtype">
+<tt class="descname">subtype</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.subtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.window">
+<tt class="descname">window</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyEvent.response_type">
+<tt class="descname">response_type</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyEvent.response_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.WindowMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">WindowMixin</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.change_save_set_checked">
+<tt class="descname">change_save_set_checked</tt><big>(</big><em>self</em>, <em>mode</em>, <em>target</em>, <em>map</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.change_save_set_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.change_save_set">
+<tt class="descname">change_save_set</tt><big>(</big><em>self</em>, <em>mode</em>, <em>target</em>, <em>map</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.change_save_set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.select_selection_input_checked">
+<tt class="descname">select_selection_input_checked</tt><big>(</big><em>self</em>, <em>selection</em>, <em>event_mask</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.select_selection_input_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.select_selection_input">
+<tt class="descname">select_selection_input</tt><big>(</big><em>self</em>, <em>selection</em>, <em>event_mask</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.select_selection_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.select_cursor_input_checked">
+<tt class="descname">select_cursor_input_checked</tt><big>(</big><em>self</em>, <em>event_mask</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.select_cursor_input_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.select_cursor_input">
+<tt class="descname">select_cursor_input</tt><big>(</big><em>self</em>, <em>event_mask</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.select_cursor_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.set_shape_region_checked">
+<tt class="descname">set_shape_region_checked</tt><big>(</big><em>self</em>, <em>dest_kind</em>, <em>x_offset</em>, <em>y_offset</em>, <em>region</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.set_shape_region_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.set_shape_region">
+<tt class="descname">set_shape_region</tt><big>(</big><em>self</em>, <em>dest_kind</em>, <em>x_offset</em>, <em>y_offset</em>, <em>region</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.set_shape_region" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.hide_cursor_checked">
+<tt class="descname">hide_cursor_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.hide_cursor_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.hide_cursor">
+<tt class="descname">hide_cursor</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.hide_cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.show_cursor_checked">
+<tt class="descname">show_cursor_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.show_cursor_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.WindowMixin.show_cursor">
+<tt class="descname">show_cursor</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.WindowMixin.show_cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.FetchRegionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">FetchRegionCookie</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.FetchRegionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.FetchRegionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">FetchRegionReply</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.FetchRegionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.FetchRegionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.FetchRegionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.FetchRegionReply.rectangles">
+<tt class="descname">rectangles</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.FetchRegionReply.rectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.FetchRegionReply.extents">
+<tt class="descname">extents</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.FetchRegionReply.extents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.RegionError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">RegionError</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.RegionError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.RegionError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.RegionError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.SelectionEvent">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">SelectionEvent</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEvent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionEvent.SetSelectionOwner">
+<tt class="descname">SetSelectionOwner</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEvent.SetSelectionOwner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionEvent.SelectionWindowDestroy">
+<tt class="descname">SelectionWindowDestroy</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEvent.SelectionWindowDestroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionEvent.SelectionClientClose">
+<tt class="descname">SelectionClientClose</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionEvent.SelectionClientClose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">xfixesExtension</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.header">
+<tt class="descname">header</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.query_version">
+<tt class="descname">query_version</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.query_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.query_version_unchecked">
+<tt class="descname">query_version_unchecked</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.query_version_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image">
+<tt class="descname">get_cursor_image</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image_unchecked">
+<tt class="descname">get_cursor_image_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_checked">
+<tt class="descname">create_region_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region">
+<tt class="descname">create_region</tt><big>(</big><em>self</em>, <em>region</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_bitmap_checked">
+<tt class="descname">create_region_from_bitmap_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>bitmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_bitmap_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_bitmap">
+<tt class="descname">create_region_from_bitmap</tt><big>(</big><em>self</em>, <em>region</em>, <em>bitmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_bitmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_window_checked">
+<tt class="descname">create_region_from_window_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>window</em>, <em>kind</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_window_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_window">
+<tt class="descname">create_region_from_window</tt><big>(</big><em>self</em>, <em>region</em>, <em>window</em>, <em>kind</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_g_c_checked">
+<tt class="descname">create_region_from_g_c_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>gc</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_g_c_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_g_c">
+<tt class="descname">create_region_from_g_c</tt><big>(</big><em>self</em>, <em>region</em>, <em>gc</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_g_c" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_picture_checked">
+<tt class="descname">create_region_from_picture_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>picture</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_picture_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.create_region_from_picture">
+<tt class="descname">create_region_from_picture</tt><big>(</big><em>self</em>, <em>region</em>, <em>picture</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.create_region_from_picture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.get_cursor_name">
+<tt class="descname">get_cursor_name</tt><big>(</big><em>self</em>, <em>cursor</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.get_cursor_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.get_cursor_name_unchecked">
+<tt class="descname">get_cursor_name_unchecked</tt><big>(</big><em>self</em>, <em>cursor</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.get_cursor_name_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image_and_name">
+<tt class="descname">get_cursor_image_and_name</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image_and_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image_and_name_unchecked">
+<tt class="descname">get_cursor_image_and_name_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.xfixesExtension.get_cursor_image_and_name_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GetCursorNameReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GetCursorNameReply</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorNameReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.GetCursorNameReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorNameReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorNameReply.nbytes">
+<tt class="descname">nbytes</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorNameReply.nbytes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorNameReply.name">
+<tt class="descname">name</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorNameReply.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorNameReply.atom">
+<tt class="descname">atom</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorNameReply.atom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.QueryVersionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">QueryVersionCookie</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.QueryVersionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.Region">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">Region</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.Region" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em>, <em>xid</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.destroy_checked">
+<tt class="descname">destroy_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.destroy_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.destroy">
+<tt class="descname">destroy</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.destroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.set_checked">
+<tt class="descname">set_checked</tt><big>(</big><em>self</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.set_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.set">
+<tt class="descname">set</tt><big>(</big><em>self</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.copy_checked">
+<tt class="descname">copy_checked</tt><big>(</big><em>self</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.copy_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.copy">
+<tt class="descname">copy</tt><big>(</big><em>self</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.union_checked">
+<tt class="descname">union_checked</tt><big>(</big><em>self</em>, <em>source2</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.union_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.union">
+<tt class="descname">union</tt><big>(</big><em>self</em>, <em>source2</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.union" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.intersect_checked">
+<tt class="descname">intersect_checked</tt><big>(</big><em>self</em>, <em>source2</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.intersect_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.intersect">
+<tt class="descname">intersect</tt><big>(</big><em>self</em>, <em>source2</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.intersect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.subtract_checked">
+<tt class="descname">subtract_checked</tt><big>(</big><em>self</em>, <em>source2</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.subtract_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.subtract">
+<tt class="descname">subtract</tt><big>(</big><em>self</em>, <em>source2</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.subtract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.invert_checked">
+<tt class="descname">invert_checked</tt><big>(</big><em>self</em>, <em>bounds</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.invert_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.invert">
+<tt class="descname">invert</tt><big>(</big><em>self</em>, <em>bounds</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.invert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.translate_checked">
+<tt class="descname">translate_checked</tt><big>(</big><em>self</em>, <em>dx</em>, <em>dy</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.translate_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.translate">
+<tt class="descname">translate</tt><big>(</big><em>self</em>, <em>dx</em>, <em>dy</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.translate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.extents_checked">
+<tt class="descname">extents_checked</tt><big>(</big><em>self</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.extents_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.extents">
+<tt class="descname">extents</tt><big>(</big><em>self</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.extents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.fetch">
+<tt class="descname">fetch</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.fetch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.fetch_unchecked">
+<tt class="descname">fetch_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.fetch_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.expand_checked">
+<tt class="descname">expand_checked</tt><big>(</big><em>self</em>, <em>destination</em>, <em>left</em>, <em>right</em>, <em>top</em>, <em>bottom</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.expand_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.Region.expand">
+<tt class="descname">expand</tt><big>(</big><em>self</em>, <em>destination</em>, <em>left</em>, <em>right</em>, <em>top</em>, <em>bottom</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.expand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.xfixes.Region.create">
+<em class="property">classmethod </em><tt class="descname">create</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>rectangles</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.xfixes.Region.create_from_bitmap">
+<em class="property">classmethod </em><tt class="descname">create_from_bitmap</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>bitmap</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.create_from_bitmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.xfixes.Region.create_from_window">
+<em class="property">classmethod </em><tt class="descname">create_from_window</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>window</em>, <em>kind</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.create_from_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.xfixes.Region.create_from_gc">
+<em class="property">classmethod </em><tt class="descname">create_from_gc</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>gc</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.create_from_gc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.xfixes.Region.create_from_picture">
+<em class="property">classmethod </em><tt class="descname">create_from_picture</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>picture</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.Region.create_from_picture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.SaveSetMapping">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">SaveSetMapping</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetMapping" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.SaveSetMapping.Map">
+<tt class="descname">Map</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetMapping.Map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SaveSetMapping.Unmap">
+<tt class="descname">Unmap</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetMapping.Unmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.PictureMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">PictureMixin</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.PictureMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.PictureMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.PictureMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.PictureMixin.set_clip_region_checked">
+<tt class="descname">set_clip_region_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>x_origin</em>, <em>y_origin</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.PictureMixin.set_clip_region_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.PictureMixin.set_clip_region">
+<tt class="descname">set_clip_region</tt><big>(</big><em>self</em>, <em>region</em>, <em>x_origin</em>, <em>y_origin</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.PictureMixin.set_clip_region" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GetCursorImageReply</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.yhot">
+<tt class="descname">yhot</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.yhot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.cursor_serial">
+<tt class="descname">cursor_serial</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.cursor_serial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.cursor_image">
+<tt class="descname">cursor_image</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.cursor_image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.height">
+<tt class="descname">height</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.width">
+<tt class="descname">width</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.y">
+<tt class="descname">y</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.x">
+<tt class="descname">x</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageReply.xhot">
+<tt class="descname">xhot</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageReply.xhot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.SaveSetTarget">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">SaveSetTarget</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetTarget" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.SaveSetTarget.Nearest">
+<tt class="descname">Nearest</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetTarget.Nearest" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SaveSetTarget.Root">
+<tt class="descname">Root</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SaveSetTarget.Root" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GContextMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GContextMixin</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GContextMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.GContextMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GContextMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.GContextMixin.set_clip_region_checked">
+<tt class="descname">set_clip_region_checked</tt><big>(</big><em>self</em>, <em>region</em>, <em>x_origin</em>, <em>y_origin</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.GContextMixin.set_clip_region_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.GContextMixin.set_clip_region">
+<tt class="descname">set_clip_region</tt><big>(</big><em>self</em>, <em>region</em>, <em>x_origin</em>, <em>y_origin</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.GContextMixin.set_clip_region" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.QueryVersionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">QueryVersionReply</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.QueryVersionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.QueryVersionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.QueryVersionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.QueryVersionReply.major_version">
+<tt class="descname">major_version</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.QueryVersionReply.major_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.QueryVersionReply.minor_version">
+<tt class="descname">minor_version</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.QueryVersionReply.minor_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">SelectionNotifyEvent</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.event_name">
+<tt class="descname">event_name</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.event_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.opcode">
+<tt class="descname">opcode</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.opcode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.event_target_class">
+<tt class="descname">event_target_class</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.event_target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.selection">
+<tt class="descname">selection</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.selection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.timestamp">
+<tt class="descname">timestamp</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.subtype">
+<tt class="descname">subtype</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.subtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.window">
+<tt class="descname">window</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.selection_timestamp">
+<tt class="descname">selection_timestamp</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.selection_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.response_type">
+<tt class="descname">response_type</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.response_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.SelectionNotifyEvent.owner">
+<tt class="descname">owner</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.SelectionNotifyEvent.owner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GetCursorImageAndNameReply</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.cursor_atom">
+<tt class="descname">cursor_atom</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.cursor_atom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.yhot">
+<tt class="descname">yhot</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.yhot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.cursor_serial">
+<tt class="descname">cursor_serial</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.cursor_serial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.name">
+<tt class="descname">name</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.cursor_image">
+<tt class="descname">cursor_image</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.cursor_image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.height">
+<tt class="descname">height</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.width">
+<tt class="descname">width</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.nbytes">
+<tt class="descname">nbytes</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.nbytes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.y">
+<tt class="descname">y</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.x">
+<tt class="descname">x</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameReply.xhot">
+<tt class="descname">xhot</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameReply.xhot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GetCursorImageCookie</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GetCursorNameCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GetCursorNameCookie</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorNameCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.GetCursorImageAndNameCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">GetCursorImageAndNameCookie</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.GetCursorImageAndNameCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyMask">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">CursorNotifyMask</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyMask" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.CursorNotifyMask.DisplayCursor">
+<tt class="descname">DisplayCursor</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorNotifyMask.DisplayCursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.xfixes.CursorMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.xfixes.</tt><tt class="descname">CursorMixin</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.set_name_checked">
+<tt class="descname">set_name_checked</tt><big>(</big><em>self</em>, <em>name</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.set_name_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>self</em>, <em>name</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.set_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.change_checked">
+<tt class="descname">change_checked</tt><big>(</big><em>self</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.change_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.change">
+<tt class="descname">change</tt><big>(</big><em>self</em>, <em>destination</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.change_by_name_checked">
+<tt class="descname">change_by_name_checked</tt><big>(</big><em>self</em>, <em>name</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.change_by_name_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.xfixes.CursorMixin.change_by_name">
+<tt class="descname">change_by_name</tt><big>(</big><em>self</em>, <em>name</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.xfixes.CursorMixin.change_by_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="shape.html"
+                                  title="previous chapter">ooxcb.protocol.shape</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="xproto.html"
+                                  title="next chapter">ooxcb.protocol.xproto</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/api/protocol/xfixes.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="xproto.html" title="ooxcb.protocol.xproto"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="shape.html" title="ooxcb.protocol.shape"
+             >previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" >ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>

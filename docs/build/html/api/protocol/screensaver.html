@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb.protocol.screensaver &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../../index.html" />
+    <link rel="up" title="ooxcb.protocol" href="index.html" />
+    <link rel="next" title="ooxcb.protocol.shape" href="shape.html" />
+    <link rel="prev" title="ooxcb.protocol.render" href="render.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="shape.html" title="ooxcb.protocol.shape"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="render.html" title="ooxcb.protocol.render"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-ooxcb.protocol.screensaver">
+<h1>ooxcb.protocol.screensaver<a class="headerlink" href="#module-ooxcb.protocol.screensaver" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.Kind">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">Kind</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Kind" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.Kind.Blanked">
+<tt class="descname">Blanked</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Kind.Blanked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.Kind.Internal">
+<tt class="descname">Internal</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Kind.Internal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.Kind.External">
+<tt class="descname">External</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Kind.External" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.WindowMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">WindowMixin</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.WindowMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.WindowMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.WindowMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.QueryVersionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">QueryVersionReply</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryVersionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.screensaver.QueryVersionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryVersionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryVersionReply.server_minor_version">
+<tt class="descname">server_minor_version</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryVersionReply.server_minor_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryVersionReply.server_major_version">
+<tt class="descname">server_major_version</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryVersionReply.server_major_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.screensaverExtension">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">screensaverExtension</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.screensaverExtension" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.screensaverExtension.header">
+<tt class="descname">header</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.screensaverExtension.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.screensaverExtension.query_version">
+<tt class="descname">query_version</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.screensaverExtension.query_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.screensaverExtension.query_version_unchecked">
+<tt class="descname">query_version_unchecked</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.screensaverExtension.query_version_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.screensaverExtension.suspend_checked">
+<tt class="descname">suspend_checked</tt><big>(</big><em>self</em>, <em>suspend</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.screensaverExtension.suspend_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.screensaverExtension.suspend">
+<tt class="descname">suspend</tt><big>(</big><em>self</em>, <em>suspend</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.screensaverExtension.suspend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">DrawableMixin</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.query_info">
+<tt class="descname">query_info</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.query_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.query_info_unchecked">
+<tt class="descname">query_info_unchecked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.query_info_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.select_input_checked">
+<tt class="descname">select_input_checked</tt><big>(</big><em>self</em>, <em>event_mask</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.select_input_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.select_input">
+<tt class="descname">select_input</tt><big>(</big><em>self</em>, <em>event_mask</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.select_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.set_attributes_checked">
+<tt class="descname">set_attributes_checked</tt><big>(</big><em>self</em>, <em>x</em>, <em>y</em>, <em>width</em>, <em>height</em>, <em>border_width</em>, <em>_class</em>, <em>depth</em>, <em>visual</em>, <em>value_mask</em>, <em>value_list</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.set_attributes_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.set_attributes">
+<tt class="descname">set_attributes</tt><big>(</big><em>self</em>, <em>x</em>, <em>y</em>, <em>width</em>, <em>height</em>, <em>border_width</em>, <em>_class</em>, <em>depth</em>, <em>visual</em>, <em>value_mask</em>, <em>value_list</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.set_attributes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.unset_attributes_checked">
+<tt class="descname">unset_attributes_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.unset_attributes_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.DrawableMixin.unset_attributes">
+<tt class="descname">unset_attributes</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.DrawableMixin.unset_attributes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">NotifyEvent</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.event_name">
+<tt class="descname">event_name</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.event_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.opcode">
+<tt class="descname">opcode</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.opcode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.event_target_class">
+<tt class="descname">event_target_class</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.event_target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.forced">
+<tt class="descname">forced</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.forced" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.kind">
+<tt class="descname">kind</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.kind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.code">
+<tt class="descname">code</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.window">
+<tt class="descname">window</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.state">
+<tt class="descname">state</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.response_type">
+<tt class="descname">response_type</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.response_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.time">
+<tt class="descname">time</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.root">
+<tt class="descname">root</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.root" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.NotifyEvent.sequence_number">
+<tt class="descname">sequence_number</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.NotifyEvent.sequence_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.QueryVersionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">QueryVersionCookie</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryVersionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.State">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">State</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.State" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.State.Off">
+<tt class="descname">Off</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.State.Off" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.State.On">
+<tt class="descname">On</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.State.On" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.State.Cycle">
+<tt class="descname">Cycle</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.State.Cycle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.State.Disabled">
+<tt class="descname">Disabled</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.State.Disabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.QueryInfoCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">QueryInfoCookie</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">QueryInfoReply</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.saver_window">
+<tt class="descname">saver_window</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.saver_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.ms_since_user_input">
+<tt class="descname">ms_since_user_input</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.ms_since_user_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.event_mask">
+<tt class="descname">event_mask</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.event_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.ms_until_server">
+<tt class="descname">ms_until_server</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.ms_until_server" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.kind">
+<tt class="descname">kind</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.kind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.screensaver.QueryInfoReply.state">
+<tt class="descname">state</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.QueryInfoReply.state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.CW">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">CW</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BackPixmap">
+<tt class="descname">BackPixmap</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BackPixmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BackPixel">
+<tt class="descname">BackPixel</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BackPixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BorderPixmap">
+<tt class="descname">BorderPixmap</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BorderPixmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BorderPixel">
+<tt class="descname">BorderPixel</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BorderPixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BitGravity">
+<tt class="descname">BitGravity</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BitGravity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.WinGravity">
+<tt class="descname">WinGravity</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.WinGravity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BackingStore">
+<tt class="descname">BackingStore</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BackingStore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BackingPlanes">
+<tt class="descname">BackingPlanes</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BackingPlanes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.BackingPixel">
+<tt class="descname">BackingPixel</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.BackingPixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.OverrideRedirect">
+<tt class="descname">OverrideRedirect</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.OverrideRedirect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.SaveUnder">
+<tt class="descname">SaveUnder</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.SaveUnder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.EventMask">
+<tt class="descname">EventMask</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.EventMask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.DontPropagate">
+<tt class="descname">DontPropagate</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.DontPropagate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.Colormap">
+<tt class="descname">Colormap</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.Colormap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.CW.Cursor">
+<tt class="descname">Cursor</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.CW.Cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.screensaver.Event">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.screensaver.</tt><tt class="descname">Event</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Event" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.screensaver.Event.NotifyMask">
+<tt class="descname">NotifyMask</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Event.NotifyMask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.screensaver.Event.CycleMask">
+<tt class="descname">CycleMask</tt><a class="headerlink" href="#ooxcb.protocol.screensaver.Event.CycleMask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="render.html"
+                                  title="previous chapter">ooxcb.protocol.render</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="shape.html"
+                                  title="next chapter">ooxcb.protocol.shape</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/api/protocol/screensaver.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="shape.html" title="ooxcb.protocol.shape"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="render.html" title="ooxcb.protocol.render"
+             >previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" >ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ooxcb.protocol.damage &mdash; ooxcb v1.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="ooxcb v1.1 documentation" href="../../index.html" />
+    <link rel="up" title="ooxcb.protocol" href="index.html" />
+    <link rel="next" title="ooxcb.protocol.render" href="render.html" />
+    <link rel="prev" title="ooxcb.protocol.composite" href="composite.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="render.html" title="ooxcb.protocol.render"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="composite.html" title="ooxcb.protocol.composite"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-ooxcb.protocol.damage">
+<h1>ooxcb.protocol.damage<a class="headerlink" href="#module-ooxcb.protocol.damage" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ooxcb.protocol.damage.ReportLevel">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">ReportLevel</tt><a class="headerlink" href="#ooxcb.protocol.damage.ReportLevel" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.damage.ReportLevel.RawRectangles">
+<tt class="descname">RawRectangles</tt><a class="headerlink" href="#ooxcb.protocol.damage.ReportLevel.RawRectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.damage.ReportLevel.DeltaRectangles">
+<tt class="descname">DeltaRectangles</tt><a class="headerlink" href="#ooxcb.protocol.damage.ReportLevel.DeltaRectangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.damage.ReportLevel.BoundingBox">
+<tt class="descname">BoundingBox</tt><a class="headerlink" href="#ooxcb.protocol.damage.ReportLevel.BoundingBox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.damage.ReportLevel.NonEmpty">
+<tt class="descname">NonEmpty</tt><a class="headerlink" href="#ooxcb.protocol.damage.ReportLevel.NonEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.damageExtension">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">damageExtension</tt><a class="headerlink" href="#ooxcb.protocol.damage.damageExtension" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.damage.damageExtension.header">
+<tt class="descname">header</tt><a class="headerlink" href="#ooxcb.protocol.damage.damageExtension.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.damageExtension.query_version">
+<tt class="descname">query_version</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.damageExtension.query_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.damageExtension.query_version_unchecked">
+<tt class="descname">query_version_unchecked</tt><big>(</big><em>self</em>, <em>client_major_version</em>, <em>client_minor_version</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.damageExtension.query_version_unchecked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.damageExtension.create_checked">
+<tt class="descname">create_checked</tt><big>(</big><em>self</em>, <em>damage</em>, <em>drawable</em>, <em>level</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.damageExtension.create_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.damageExtension.create">
+<tt class="descname">create</tt><big>(</big><em>self</em>, <em>damage</em>, <em>drawable</em>, <em>level</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.damageExtension.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.DrawableMixin">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">DrawableMixin</tt><a class="headerlink" href="#ooxcb.protocol.damage.DrawableMixin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.damage.DrawableMixin.target_class">
+<tt class="descname">target_class</tt><a class="headerlink" href="#ooxcb.protocol.damage.DrawableMixin.target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.DrawableMixin.damage_add_checked">
+<tt class="descname">damage_add_checked</tt><big>(</big><em>self</em>, <em>region</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.DrawableMixin.damage_add_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.DrawableMixin.damage_add">
+<tt class="descname">damage_add</tt><big>(</big><em>self</em>, <em>region</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.DrawableMixin.damage_add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">DamageNotifyEvent</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="data">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.event_name">
+<tt class="descname">event_name</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.event_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.opcode">
+<tt class="descname">opcode</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.opcode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.event_target_class">
+<tt class="descname">event_target_class</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.event_target_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.area">
+<tt class="descname">area</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.area" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.geometry">
+<tt class="descname">geometry</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.geometry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.timestamp">
+<tt class="descname">timestamp</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.level">
+<tt class="descname">level</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.damage">
+<tt class="descname">damage</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.damage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.response_type">
+<tt class="descname">response_type</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.response_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.DamageNotifyEvent.drawable">
+<tt class="descname">drawable</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageNotifyEvent.drawable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.Damage">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">Damage</tt><a class="headerlink" href="#ooxcb.protocol.damage.Damage" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.damage.Damage.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em>, <em>xid</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.Damage.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.Damage.destroy_checked">
+<tt class="descname">destroy_checked</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.Damage.destroy_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.Damage.destroy">
+<tt class="descname">destroy</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.Damage.destroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.Damage.subtract_checked">
+<tt class="descname">subtract_checked</tt><big>(</big><em>self</em>, <em>repair</em>, <em>parts</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.Damage.subtract_checked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ooxcb.protocol.damage.Damage.subtract">
+<tt class="descname">subtract</tt><big>(</big><em>self</em>, <em>repair</em>, <em>parts</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.Damage.subtract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="ooxcb.protocol.damage.Damage.create">
+<em class="property">classmethod </em><tt class="descname">create</tt><big>(</big><em>cls</em>, <em>conn</em>, <em>damage</em>, <em>level</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.Damage.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.BadDamage">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">BadDamage</tt><a class="headerlink" href="#ooxcb.protocol.damage.BadDamage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.QueryVersionCookie">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">QueryVersionCookie</tt><a class="headerlink" href="#ooxcb.protocol.damage.QueryVersionCookie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.DamageError">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">DamageError</tt><a class="headerlink" href="#ooxcb.protocol.damage.DamageError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.damage.DamageError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.DamageError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ooxcb.protocol.damage.QueryVersionReply">
+<em class="property">class </em><tt class="descclassname">ooxcb.protocol.damage.</tt><tt class="descname">QueryVersionReply</tt><a class="headerlink" href="#ooxcb.protocol.damage.QueryVersionReply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ooxcb.protocol.damage.QueryVersionReply.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>conn</em><big>)</big><a class="headerlink" href="#ooxcb.protocol.damage.QueryVersionReply.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.QueryVersionReply.major_version">
+<tt class="descname">major_version</tt><a class="headerlink" href="#ooxcb.protocol.damage.QueryVersionReply.major_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ooxcb.protocol.damage.QueryVersionReply.minor_version">
+<tt class="descname">minor_version</tt><a class="headerlink" href="#ooxcb.protocol.damage.QueryVersionReply.minor_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="composite.html"
+                                  title="previous chapter">ooxcb.protocol.composite</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="render.html"
+                                  title="next chapter">ooxcb.protocol.render</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/api/protocol/damage.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="render.html" title="ooxcb.protocol.render"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="composite.html" title="ooxcb.protocol.composite"
+             >previous</a> |</li>
+        <li><a href="../../index.html">ooxcb v1.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >ooxcb api documentation</a> &raquo;</li>
+          <li><a href="index.html" >ooxcb.protocol</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2010, samurai-x.org.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.5.
+    </div>
+  </body>
+</html>
