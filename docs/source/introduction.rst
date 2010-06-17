@@ -9,8 +9,6 @@ to the X server, developed for the `samurai-x`_ window manager.
 xpyb uses a wrapper generator to create python modules out of the XML X protocol descriptions
 of the `xcb`_ project. It aims to provide with an easy-to-use object-oriented interface to the X server.
 
-Test.
-
 Why?
 ----
 
