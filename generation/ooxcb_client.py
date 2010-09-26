@@ -969,6 +969,10 @@ def py_event(self, name):
     entry = INTERFACE.get('Events', {}).get(strip_ns(name), {})
 
     clsname = entry.get('classname', self.py_event_name)
+
+    # Opcode define
+    EVENTS[self.opcodes[name]] = clsname
+
     eventname = ('"%s"' % entry.get('eventname',
             'on_%s' % pythonize_camelcase_name(strip_ns(name))))
     struct = PyClass(clsname)
@@ -997,9 +1001,6 @@ def py_event(self, name):
     py_complex(self, name, struct)
 
     struct.get_member_by_name('read').code.append('self.event_target = self.%s' % membername)
-
-    # Opcode define
-    EVENTS[self.opcodes[name]] = self.py_event_name
 
 def add_custom_member(cls, mtype, minfo):
     def _handle_method(meth):

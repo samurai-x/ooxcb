@@ -191,7 +191,7 @@ class QueryVersionReply(ooxcb.Reply):
         stream.write(pack("=xxxxxxxxIIxxxxxxxxxxxxxxxx", self.major_version, self.minor_version))
 
 _events = {
-    0: NotifyEvent,
+    0: DamageNotifyEvent,
 }
 
 _errors = {
