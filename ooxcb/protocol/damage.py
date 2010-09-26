@@ -151,7 +151,7 @@ class Damage(ooxcb.Resource):
             ooxcb.VoidCookie())
 
     @classmethod
-    def create(cls, conn, damage, level):
+    def create(cls, conn, drawable, level):
         did = conn.generate_id()
         damage = cls(conn, did)
         conn.damage.create_checked(damage, drawable, level).check()

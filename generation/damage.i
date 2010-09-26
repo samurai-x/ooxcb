@@ -32,7 +32,7 @@ Classes:
     Damage:
         - classmethod:
             name: create
-            arguments: [conn, damage, level]
+            arguments: [conn, drawable, level]
             code:
                 - "did = conn.generate_id()"
                 - "damage = cls(conn, did)"

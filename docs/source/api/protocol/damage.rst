@@ -90,7 +90,7 @@ ooxcb.protocol.damage
     .. method:: subtract(self, repair, parts)
 
 
-    .. classmethod:: create(cls, conn, damage, level)
+    .. classmethod:: create(cls, conn, drawable, level)
 
 
 .. class:: BadDamage
