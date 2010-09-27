@@ -84,7 +84,7 @@ def get_pil_image(drawable, x=0, y=0, width=None, height=None):
            0xffffffff # to get all bits (this should be big enough)
            ).reply()
     data = ''.join(map(chr, reply.data))
-    return Image.fromstring("RGBX", (width - x, height - y),
+    return Image.fromstring("RGBX", width, height,
             data, "raw", "BGRX").convert("RGB")
 
 def mixin():
