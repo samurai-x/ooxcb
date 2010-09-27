@@ -80,7 +80,7 @@ def get_pil_image(drawable, x=0, y=0, width=None, height=None):
     reply = drawable.get_image(
            ImageFormat.ZPixmap,
            x, y,
-           width, height,
+           (width, height),
            0xffffffff # to get all bits (this should be big enough)
            ).reply()
     data = ''.join(map(chr, reply.data))
