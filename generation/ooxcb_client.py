@@ -90,6 +90,8 @@ def get_field_by_name(fields, name):
 def get_wrapped(name):
     if name in WRAPPERS:
         return WRAPPERS[name].name
+    elif name in INTERFACE.get('CustomWrappers', ()):
+        return INTERFACE['CustomWrappers'][name]
     else:
         return name
 

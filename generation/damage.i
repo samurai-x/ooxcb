@@ -1,5 +1,5 @@
 ImportCode:
-    - "from ooxcb.protocol.xproto import Drawable"
+    - "from ooxcb.protocol.xproto import Drawable, Rectangle"
 
 Mixins:
     DRAWABLE: Drawable
@@ -7,9 +7,15 @@ Mixins:
 ExternallyWrapped:
     - DRAWABLE
     - REGION
+    - RECTANGLE
 
 ResourceClasses:
     - DAMAGE
+    - DRAWABLE
+
+CustomWrappers:
+    RECTANGLE: Rectangle
+    REGION: Region
 
 Requests:
     Destroy:

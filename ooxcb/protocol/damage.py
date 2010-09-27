@@ -7,7 +7,7 @@ try:
 except ImportError:
     import StringIO
 from struct import pack, unpack, calcsize
-from ooxcb.protocol.xproto import Drawable
+from ooxcb.protocol.xproto import Drawable, Rectangle
 from ooxcb.util import Mixin
 
 def unpack_from_stream(fmt, stream, offset=0):
@@ -97,12 +97,12 @@ class DamageNotifyEvent(ooxcb.Event):
         _unpacked = unpack_from_stream("=BBxxIII", stream)
         self.response_type = _unpacked[0]
         self.level = _unpacked[1]
-        self.drawable = Drawable(self.conn, _unpacked[2])
+        self.drawable = self.conn.get_from_cache_fallback(_unpacked[2], DrawableMixin)
         self.damage = self.conn.get_from_cache_fallback(_unpacked[3], Damage)
         self.timestamp = _unpacked[4]
-        self.area = RECTANGLE.create_from_stream(self.conn, stream)
+        self.area = Rectangle.create_from_stream(self.conn, stream)
         stream.seek(ooxcb.type_pad(8, stream.tell() - root), 1)
-        self.geometry = RECTANGLE.create_from_stream(self.conn, stream)
+        self.geometry = Rectangle.create_from_stream(self.conn, stream)
         self.event_target = self.drawable
 
     def build(self, stream):
