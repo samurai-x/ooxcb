@@ -71,7 +71,7 @@ class CursorNotifyEvent(ooxcb.Event):
         _unpacked = unpack_from_stream("=BBxxIIIIxxxxxxxxxxxx", stream)
         self.response_type = _unpacked[0]
         self.subtype = _unpacked[1]
-        self.window = Window(self.conn, _unpacked[2])
+        self.window = self.conn.get_from_cache_fallback(_unpacked[2], WindowMixin)
         self.cursor_serial = _unpacked[3]
         self.timestamp = _unpacked[4]
         self.name = self.conn.atoms.get_by_id(_unpacked[5])
@@ -698,8 +698,8 @@ class SelectionNotifyEvent(ooxcb.Event):
         _unpacked = unpack_from_stream("=BBxxIIIIIxxxxxxxx", stream)
         self.response_type = _unpacked[0]
         self.subtype = _unpacked[1]
-        self.window = Window(self.conn, _unpacked[2])
-        self.owner = Window(self.conn, _unpacked[3])
+        self.window = self.conn.get_from_cache_fallback(_unpacked[2], WindowMixin)
+        self.owner = self.conn.get_from_cache_fallback(_unpacked[3], WindowMixin)
         self.selection = self.conn.atoms.get_by_id(_unpacked[4])
         self.timestamp = _unpacked[5]
         self.selection_timestamp = _unpacked[6]

@@ -11,6 +11,11 @@ ExternallyWrapped:
 
 ResourceClasses:
     - REGION
+    - WINDOW
+    - PIXMAP
+    - GCONTEXT
+    - CURSOR
+    - PICTURE
 
 Xizers:
     RectanglesObjects:
