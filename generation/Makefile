@@ -1,4 +1,4 @@
-all: xproto xtest render composite shape xfixes damage screensaver bigreq
+all: xproto xtest render composite shape xfixes damage screensaver bigreq record
 
 xproto: ../ooxcb/protocol/xproto.py ../docs/source/api/protocol/xproto.rst
 
@@ -90,8 +90,18 @@ bigreq.rst: ../ooxcb/protocol/bigreq.py
 ../ooxcb/protocol/bigreq.py: bigreq.xml bigreq.i
 	python ooxcb_client.py bigreq > ../ooxcb/protocol/bigreq.py
 
-clean:
-	rm -f ../docs/source/api/protocol/{xproto,xtest,render,composite,shape,xfixes,damage,screensaver,bigreq}.rst ../ooxcb/protocol/{xproto,xtest,render,composite,shape,xfixes,damage,screensaver,bigreq}.py {xproto,xtest,render,composite,shape,xfixes,damage,screensaver,bigreq}.rst
+record: ../ooxcb/protocol/record.py ../docs/source/api/protocol/record.rst
 
-.phony: xproto xtest render composite shape xfixes damage screensaver bigreq
+../docs/source/api/protocol/record.rst: record.rst
+	cp record.rst ../docs/source/api/protocol/record.rst
+
+record.rst: ../ooxcb/protocol/record.py
+
+../ooxcb/protocol/record.py: record.xml record.i
+	python ooxcb_client.py record > ../ooxcb/protocol/record.py
+
+clean:
+	rm -f ../docs/source/api/protocol/{xproto,xtest,render,composite,shape,xfixes,damage,screensaver,bigreq,record}.rst ../ooxcb/protocol/{xproto,xtest,render,composite,shape,xfixes,damage,screensaver,bigreq,record}.py {xproto,xtest,render,composite,shape,xfixes,damage,screensaver,bigreq,record}.rst
+
+.phony: xproto xtest render composite shape xfixes damage screensaver bigreq record
 

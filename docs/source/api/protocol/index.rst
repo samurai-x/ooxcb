@@ -9,6 +9,7 @@ ooxcb.protocol
     bigreq.rst
     composite.rst
     damage.rst
+    record.rst
     render.rst
     screensaver.rst
     shape.rst
