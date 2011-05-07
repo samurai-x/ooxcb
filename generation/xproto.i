@@ -1051,13 +1051,13 @@ Classes:
     Str:
         - method:
             name: __str__
-            code: ["return self.name.to_string()"]
+            code: ["return self.name"]
         - method:
             name: __repr__
-            code: ["return '<ooxcb.protocol.xproto.Str %s>' % repr(self.name.to_string())"]
+            code: ["return '<ooxcb.protocol.xproto.Str %s>' % repr(self.name)"]
         - method:
             name: pythonize_lazy
-            code: ["return self.name.to_string()"]
+            code: ["return self.name"]
         - classmethod:
             name: create_lazy
             arguments: ["conn", "string"]

@@ -183,7 +183,9 @@ class FetchRegionReply(ooxcb.Reply):
     def read(self, stream):
         self._address = stream.address
         root = stream.tell()
+        stream.seek(8, 1)
         self.extents = RECTANGLE.create_from_stream(self.conn, stream)
+        stream.seek(16, 1)
         stream.seek(ooxcb.type_pad(8, stream.tell() - root), 1)
         self.rectangles = ooxcb.List(self.conn, stream, self.length, RECTANGLE, 8)
 

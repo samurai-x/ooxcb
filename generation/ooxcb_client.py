@@ -425,7 +425,8 @@ def py_complex(self, name, cls):
         if fields:
             _add_fields(fields)
         if size > 0:
-#            read_code.append(template('count += $size', size=size))
+            if not fields: # if no fields got added, the pad would get lost. add it manually then.
+                read_code.append(template('stream.seek($size, 1)', size=size))
             build_code.append(template('count += $size', size=size))
         if need_alignment:
             read_code.append('stream.seek(ooxcb.type_pad(%d, stream.tell() - root), 1)' % align_size(field))

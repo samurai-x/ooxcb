@@ -43,10 +43,6 @@ def on_expose(event):
     conn.flush()
 
 @win.event
-def on_expose(event):
-    print 'hell yeah', event
-
-@win.event
 def on_button_press(event):
     global running
     running = False

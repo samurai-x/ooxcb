@@ -1431,6 +1431,7 @@ class QueryKeymapReply(ooxcb.Reply):
 
     def read(self, stream):
         self._address = stream.address
+        stream.seek(8, 1)
         self.keys = ooxcb.List(self.conn, stream, 32, 'B', 1)
 
     def build(self, stream):
@@ -2587,6 +2588,7 @@ class ListFontsWithInfoReply(ooxcb.Reply):
         _unpacked = unpack_from_stream("=xBxxxxxx", stream)
         self.name_len = _unpacked[0]
         self.min_bounds = Charinfo.create_from_stream(self.conn, stream)
+        stream.seek(4, 1)
         stream.seek(ooxcb.type_pad(12, stream.tell() - root), 1)
         self.max_bounds = Charinfo.create_from_stream(self.conn, stream)
         _unpacked = unpack_from_stream("=xxxxHHHHBBBBhhI", stream)
@@ -3512,13 +3514,13 @@ class Str(ooxcb.Struct):
         build_list(self.conn, stream, self.name, 'B')
 
     def __str__(self):
-        return self.name.to_string()
+        return self.name
 
     def __repr__(self):
-        return '<ooxcb.protocol.xproto.Str %s>' % repr(self.name.to_string())
+        return '<ooxcb.protocol.xproto.Str %s>' % repr(self.name)
 
     def pythonize_lazy(self):
-        return self.name.to_string()
+        return self.name
 
     @classmethod
     def create_lazy(cls, conn, string):
@@ -4758,7 +4760,9 @@ class QueryFontReply(ooxcb.Reply):
     def read(self, stream):
         self._address = stream.address
         root = stream.tell()
+        stream.seek(8, 1)
         self.min_bounds = Charinfo.create_from_stream(self.conn, stream)
+        stream.seek(4, 1)
         stream.seek(ooxcb.type_pad(12, stream.tell() - root), 1)
         self.max_bounds = Charinfo.create_from_stream(self.conn, stream)
         _unpacked = unpack_from_stream("=xxxxHHHHBBBBhhI", stream)

@@ -8,8 +8,7 @@ conn = ooxcb.connect()
 
 fonts = conn.core.list_fonts(1, '10x20').reply().names
 font = X.Font.open(conn, fonts[0])
-print font.query().reply()
-#print vars(font.query_text_extents('foobar').reply())
+print vars(font.query().reply())
 
 # TODO: doesn't work :)
 #p = conn.core.get_font_path().reply().path

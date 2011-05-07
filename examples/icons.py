@@ -1,3 +1,6 @@
+import sys
+sys.path.append('..')
+
 import ooxcb
 from ooxcb.contrib.gdk import get_icon_pixbufs, choose_icon
 from ooxcb.protocol import xproto

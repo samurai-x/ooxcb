@@ -32,6 +32,7 @@ def _resource(type):
 
 AUTO_TYPES = {
     'WINDOW': _resource(xproto.Window),
+    'PIXMAP': _resource(xproto.Pixmap),
     'DRAWABLE': _resource(xproto.Drawable),
     'STRING': lambda conn, values: ''.join(map(chr, values)),
     'UTF8_STRING': lambda conn, values: ''.join(map(chr, values)).decode('utf-8'),
