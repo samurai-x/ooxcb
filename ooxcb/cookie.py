@@ -70,8 +70,8 @@ class Cookie(object):
 
     def reply(self):
         """
-            return the reply of the request. That will raise a
-            `XcbException` if the request is void.
+            wait for the reply of the request and return it.
+            That will raise a `XcbException` if the request is void.
         """
         if self.request.is_void:
             raise XcbException('Request has no reply.')
@@ -85,6 +85,30 @@ class Cookie(object):
         if not data:
             raise IOError("I/O error on X server connection.")
         return self.reply_cls.create_from_address(self.conn, data)
+
+    def poll_for_reply(self):
+        """
+            return the reply of the request if there is one. If not,
+            *don't* wait for the reply to come, just return None.
+            That will raise a `XcbException` if the request is void.
+        """
+        if self.request.is_void:
+            raise XcbException('Request has no reply.')
+        self.conn.check_conn()
+        self.conn.flush()
+
+        err = libxcb.xcb_generic_error_t()
+        error = ctypes.pointer(err)
+        data = ctypes.c_void_p()
+        reply_available = libxcb.xcb_poll_for_reply(self.conn.conn,
+                self.cookie.sequence, ctypes.byref(data), ctypes.byref(error))
+        if reply_available:
+            Error.set(self.conn, error)
+            if not data:
+                raise IOError("I/O error on X server connection.")
+            return self.reply_cls.create_from_address(self.conn, data.value)
+        else:
+            return None
 
 class VoidCookie(Cookie):
     """
